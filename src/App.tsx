@@ -1,10 +1,15 @@
-import React from "react";
-import { Abc } from "./components/abc";
+import React from 'react';
 
-export const App = () => {
-  return(
-    <>
-    <Abc />
-    </>
-  )
-}
+import { Container } from '@mui/material';
+import { UserList } from './components/UserList';
+
+export const App: React.FC = () => {
+  return (
+    <Container>
+      <h1>User List</h1>
+      <UserList />
+    </Container>
+  );
+};
+
+
